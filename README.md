@@ -64,6 +64,8 @@ Install Rust on your local machine. Use the following link to get setup quickly:
 [rust setup](https://www.rust-lang.org/tools/install)
 
 Moreover, the front end will be utilizing Svelte.
+To run Svelte:
+npm run dev -- --open
 
 ## Usage
 TBD
