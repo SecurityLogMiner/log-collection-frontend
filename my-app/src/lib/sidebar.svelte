@@ -14,7 +14,7 @@
       },
       {
         name: "Downloads",
-        url: "/dashboard"
+        url: "/downloads"
       },
     
     ];

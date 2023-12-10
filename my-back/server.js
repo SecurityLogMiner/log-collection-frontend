@@ -15,7 +15,7 @@ AWS.config.update({
 
 const s3 = new AWS.S3();
 
-app.get('/api/download-certificate', async (req, res) => {
+app.get('/api/download.svelte', async (req, res) => {
   try {
     const params = {
       Bucket: process.env.AWS_S3_BUCKET,
