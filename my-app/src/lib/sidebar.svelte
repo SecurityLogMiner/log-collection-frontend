@@ -20,6 +20,10 @@
         name: "OTP",
         url: "/OTP"
       },
+      {
+        name: "About",
+        url: "/About"
+      },
     
     ];
   </script>
