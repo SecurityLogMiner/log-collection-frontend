@@ -12,8 +12,38 @@
   };
 
   </script>
-  
+
+<div class = "logo-banner">
+  <h2> Log Collection Service</h2>
+</div>
+
+  <div class="login-container">
+    <form class="login-form" on:submit|preventDefault={handleSubmit}>
+      <h2>Login</h2>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" bind:value={username}>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" bind:value={password}>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+
+
   <style>
+
+    .logo-banner {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding: 20px;
+      border-radius: 4px;
+      margin: auto;
+    }
     .login-container {
       display: flex;
       justify-content: center;
@@ -58,18 +88,5 @@
     }
   </style>
   
-  <div class="login-container">
-    <form class="login-form" on:submit|preventDefault={handleSubmit}>
-      <h2>Login</h2>
-      <div class="input-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" bind:value={username}>
-      </div>
-      <div class="input-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" bind:value={password}>
-      </div>
-      <button type="submit">Login</button>
-    </form>
-  </div>
+
   
