@@ -16,6 +16,10 @@
         name: "Downloads",
         url: "/dashboard"
       },
+      {
+        name: "OTP",
+        url: "/OTP"
+      },
     
     ];
   </script>
