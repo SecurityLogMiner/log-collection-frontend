@@ -2,7 +2,7 @@
     const sidebarItems = [
       {
         name: "Home",
-        url: "/dashboard"
+        url: "/home"
       },
       {
         name: "Account",
@@ -13,7 +13,7 @@
         url: "/dashboard"
       },
       {
-        name: "Download",
+        name: "Downloads",
         url: "/dashboard"
       },
     
@@ -30,11 +30,13 @@
       border-radius: 15px; 
       overflow: hidden; 
     }
+
     ul {
       list-style-type: none; 
       padding: 0;
       margin: 0; 
     }
+
     .sidebar-item {
       display: flex;
       align-items: center;
@@ -43,6 +45,7 @@
       text-decoration: none;
       cursor: pointer;
     }
+    
     .sidebar-item:hover {
       background-color: silver;
     }
