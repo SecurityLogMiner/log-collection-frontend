@@ -39,6 +39,15 @@
     box-sizing: border-box;
   }
 
+  .flexbox-text {
+    /* Text styling, like font size, color, etc. */
+    font-size: 1rem;
+    color: #333;
+    /* Additional properties for positioning if needed */
+    margin: 0; /* Remove default margins */
+    align-self: flex-start; /* Align this specific item to the top if other items are added */
+  }
+
   
   :global(body) {
     background-color: #d3d3d3; 
@@ -50,14 +59,14 @@
   <div class="container">
     <Sidebar />
     <main class="content">
-      <h1>Welcome to Your Dashboard</h1>
+      <h1>Account Dashboard</h1>
     
       <div class="widgets-container">
-        <div class="flexbox">Flexbox Section 1</div>
-        <div class="flexbox">Flexbox Section 2</div>
-        <div class="flexbox">Flexbox Section 3</div>
-        <div class="flexbox">Flexbox Section 4</div>
-        <div class="flexbox flexbox-stretched">Flexbox Section 5</div>
+        <div class="flexbox"> <p class="flexbox-text">View Log Sources</p></div>
+        <div class="flexbox"><p class="flexbox-text">Temporary</p></div>
+        <div class="flexbox"><p class="flexbox-text">Placement</p></div>
+        <div class="flexbox"><p class="flexbox-text">Of</p></div>
+        <div class="flexbox flexbox-stretched"><p class="flexbox-text">Flexboxes</p></div>
       </div>
 
     </main>
