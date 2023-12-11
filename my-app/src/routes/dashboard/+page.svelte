@@ -84,11 +84,11 @@
       <h1>Account Dashboard</h1>
     
       <div class="widgets-container">
-        <div class="flexbox"> <p class="flexbox-text">View Log Sources</p></div>
-        <div class="flexbox"><p class="flexbox-text">Temporary</p></div>
-        <div class="flexbox"><p class="flexbox-text">Placement</p></div>
-        <div class="flexbox"><p class="flexbox-text">Of</p></div>
-        <div class="flexbox flexbox-stretched"><p class="flexbox-text">Raw Logs</p></div>
+        <div class="flexbox"> <p class="flexbox-text">[View Existing Log Trends]</p></div>
+        <div class="flexbox"><p class="flexbox-text">[Errors with timestamps and host IPs]</p></div>
+        <div class="flexbox"><p class="flexbox-text">[Certificate Status]</p></div>
+        <div class="flexbox"><p class="flexbox-text">[Saved Logs (Or maybe Saved Past Searches)]</p></div>
+        <div class="flexbox flexbox-stretched"><p class="flexbox-text"></p></div>
       </div>
 
     </main>
