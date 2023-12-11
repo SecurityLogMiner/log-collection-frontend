@@ -26,6 +26,18 @@
       },
     
     ];
+
+  import { onMount } from 'svelte';
+
+  let isExpanded = false;
+
+  onMount(() => {
+    // Add event listeners or any other initialization logic here
+  });
+
+  function toggleNavbar() {
+    isExpanded = !isExpanded;
+  }
   </script>
   
   <style>
