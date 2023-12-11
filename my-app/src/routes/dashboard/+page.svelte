@@ -1,6 +1,7 @@
 <script>
     import Sidebar from '$lib/sidebar.svelte';
     import Wip from '$lib/wip.svelte';
+    import Graph from '$lib/graph.svelte';
 
   </script>
   
@@ -64,6 +65,16 @@
     background-color: #d3d3d3; 
   }
 
+  .graph {
+        flex: 1;
+        min-width: 300px; 
+        margin: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background: white;
+    }
+
 
   </style>
   
@@ -77,7 +88,7 @@
         <div class="flexbox"><p class="flexbox-text">Temporary</p></div>
         <div class="flexbox"><p class="flexbox-text">Placement</p></div>
         <div class="flexbox"><p class="flexbox-text">Of</p></div>
-        <div class="flexbox flexbox-stretched"><p class="flexbox-text">Flexboxes</p></div>
+        <div class="flexbox flexbox-stretched"><p class="flexbox-text">Raw Logs</p></div>
       </div>
 
     </main>
