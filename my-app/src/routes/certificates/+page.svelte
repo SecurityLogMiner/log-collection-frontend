@@ -69,8 +69,6 @@
   <div class="container">
     <Sidebar />
     <main class="content">
-        <a href="/certs/cert.pem" download>Download Certificate</a>
-
     
       
 

@@ -10,7 +10,7 @@
       },
       {
         name: "Certificates",
-        url: "/dashboard"
+        url: "/certificates"
       },
       {
         name: "Downloads",
