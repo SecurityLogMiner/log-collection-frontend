@@ -85,7 +85,7 @@
     
       <div class="widgets-container">
         <div class="flexbox"> <p class="flexbox-text">[View Existing Log Trends]</p></div>
-        <div class="flexbox"><p class="flexbox-text">[Errors with timestamps and host IPs]</p></div>
+        <div class="flexbox"><p class="flexbox-text">[Errors Or Warnings, with timestamps and host IPs]</p></div>
         <div class="flexbox"><p class="flexbox-text">[Certificate Status]</p></div>
         <div class="flexbox"><p class="flexbox-text">[Saved Logs (Or maybe Saved Past Searches)]</p></div>
         <div class="flexbox flexbox-stretched"><p class="flexbox-text"></p></div>
