@@ -10,11 +10,11 @@
       },
       {
         name: "Certificates",
-        url: "/dashboard"
+        url: "/certificates"
       },
       {
         name: "Downloads",
-        url: "/dashboard"
+        url: "/downloads"
       },
       {
         name: "OTP",
