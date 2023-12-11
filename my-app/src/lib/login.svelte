@@ -1,6 +1,7 @@
 <script>
   import { goto } from '$app/navigation';
   import { afterUpdate } from 'svelte';
+  import Wip from '$lib/wip.svelte';
 
   let username = '';
   let password = '';
@@ -48,17 +49,11 @@
       Don't have an account? <a href="/signup">Sign up</a>
     </p>
   </form>
+  <Wip/>
 </div>
 
 <style>
-  .logo-banner {
-    /* justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 20px;
-    border-radius: 4px;
-    margin: auto; */
-  }
+
 
   .login-container {
     display: flex;

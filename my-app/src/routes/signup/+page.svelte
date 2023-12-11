@@ -1,5 +1,6 @@
 <script>
     import { goto } from '$app/navigation';
+    import Wip from '$lib/wip.svelte';
     import { afterUpdate } from 'svelte';
   
     let username = '';
@@ -55,11 +56,12 @@
         <input type="password" id="confirmPassword" bind:value={confirmPassword}>
       </div>
       <button type="submit">Sign Up</button>
+      <p class="login-link">
+        Already have an account? <a href="/">Login</a>
+      </p>
     </form>
   
-    <p class="login-link">
-      Already have an account? <a href="/login">Login</a>
-    </p>
+    <Wip/>
   </div>
   
   <style>

@@ -1,5 +1,6 @@
 <script>
     import Sidebar from '$lib/sidebar.svelte';
+    import Wip from '$lib/wip.svelte';
 
     export let appName = 'Log Collection Service';
 
@@ -29,6 +30,7 @@
             </div>
         </div>
     </main>
+    <Wip/>
 </div>
 
 

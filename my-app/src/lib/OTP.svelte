@@ -1,6 +1,7 @@
 <script>
     let otp  = '';
     import Sidebar from '$lib/sidebar.svelte';
+    import Wip from '$lib/wip.svelte';
 
     function generateOTP() {
         // Generate a random 6 digit OTP
@@ -38,6 +39,7 @@
   
 
     </main>
+    <Wip/>
   </div>
 
 

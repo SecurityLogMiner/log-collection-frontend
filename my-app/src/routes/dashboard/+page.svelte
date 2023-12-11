@@ -1,5 +1,7 @@
 <script>
     import Sidebar from '$lib/sidebar.svelte';
+    import Wip from '$lib/wip.svelte';
+
   </script>
   
   <style>
@@ -79,6 +81,7 @@
       </div>
 
     </main>
+    <Wip/>
   </div>
 
   

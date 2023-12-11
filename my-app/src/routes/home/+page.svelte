@@ -1,6 +1,8 @@
 <script>
     // Home page script
     import Sidebar from '$lib/sidebar.svelte';
+    import Wip from '$lib/wip.svelte';
+
   </script>
 
   <style>
@@ -23,6 +25,7 @@
       <h1>Welcome to the Home Page</h1>
 
     </main>
+    <Wip/>
   </div>
 
 
