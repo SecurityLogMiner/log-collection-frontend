@@ -1,112 +1,13 @@
-# Log Collection Front End
+# Svelte/JavaScript: Basic User Authentication Code Sample
 
-To everything that functions that you can't see.
+This JavaScript code sample demonstrates **how to implement user authentication** in Svelte applications using Auth0.
 
-## Table of Contents
+This code sample is part of the ["Auth0 Developer Hub"](https://auth0.com/developers/hub), a place where you can explore the authentication and authorization features of the Auth0 Identity Platform.
 
-- [Project Management](#project-management)
-    - [Branch Types](#branch-types)
-    - [Workflow](#workflow)
-    - [Creating Issues](#creating-issues)
-- [Getting Started](#getting-started)
-    - [System Design](https://github.com/SecurityLogMiner/log-collection-backend/blob/features/log-collection-backend.drawio.png)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-- [Contact](#contact)
+Visit the ["Svelte/JavaScript Code Sample: User Authentication For Basic Apps"](https://auth0.com/developers/hub/code-samples/spa/svelte-javascript/basic-authentication) page for instructions on how to configure and run this code sample and how to integrate it with an API server of your choice to [create a full-stack code sample](https://auth0.com//developers/hub/code-samples/full-stack/hello-world/basic-access-control/spa).
 
-## Project Management
+[![Svelte/JavaScript Code Sample: User Authentication For Basic Apps](https://cdn.auth0.com/blog/hub/code-samples/spa/svelte-javascript/basic-authentication.png)](https://auth0.com/developers/hub/code-samples/spa/svelte-javascript/basic-authentication)
 
-### Branch Types
-- Release: The main branch where well tested code resides.
-- Development: Features that have been tested will continue to merge to this upstream. 
-- Features: Meaningful addtions to the codebase are tested and merged upstream.
-- Working: Where lessons are learned.
+## Why Use Auth0?
 
-### Workflow
-
-**1: Clone the Repository**
-1. Each developer clones the central repository to their local machine using `git clone <repository_url>`.
-
-**2: Create a Working Branch**
-1. When working on a new feature or bug fix, each developer creates a new branch using `git checkout -b <working_branch_name>`. This keeps their changes isolated from the main codebase.
-
-**3: Develop and Commit Changes**
-1. Developers make code changes and commit them to their working branch using `git add` and `git commit`.
-
-**6: Push Changes Branches**
-1. Developers push their branch updates to their working branch using `git push origin working-branch-name`.
-
-**7: Create Pull Requests**
-1. When a developer finishes working on a feature or bug fix, they create a pull request (PR). This initiates a code review process.
-
-**8: Review Code**
-1. Repo admin review the code changes in the PR, provide feedback, and suggest improvements.
-
-**9: Make Changes (if necessary)**
-1. **Iterate if Needed:** If there are suggested changes, the developer makes the necessary adjustments in their working branch and pushes the changes to the PR.
-
-**10: Merge into Features Branch**
-1. Once the code in the PR is approved, it can be merged into the features branch.
-
-**11: Admin Clean Up**
-1. After merging, the developer **can** delete the FeatureName branch on the central repository if complete.
-
-**12: Rinse and Repeat**
-1. Developers continue working on new features or bug fixes by creating new working branches and following the same process.
-
-### Creating Issues
-Mark issues with relevant tags.
-
-## Getting Started
-Install Rust on your local machine. Use the following link to get setup quickly:
-[rust setup](https://www.rust-lang.org/tools/install)
-
-1. Change into the current app directory
-    ```
-    cd my-app
-    ```
-2. Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-    ```
-    npm run dev
-    ```
-3. Start the server and open the app in a new browser tab
-    ```
-    npm run dev
-    ```
-
-
-
-#### Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-
-
-
-## Usage
-TBD
-
-## Contributing
-TBD
-
-## License
-Apache 2.0
-
-## Acknowledgments
-Syn Ack Fin
-
-## Contact
-Discord, if you know, you know
-
-[Back to top](#table-of-contents)
-
+Auth0 is a flexible drop-in solution to add authentication and authorization services to your applications. Your team and organization can avoid the cost, time, and risk that come with building your own solution to authenticate and authorize users. We offer tons of guidance and SDKs for you to get started and [integrate Auth0 into your stack easily](https://auth0.com/developers/hub/code-samples/full-stack).
