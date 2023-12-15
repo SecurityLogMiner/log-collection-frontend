@@ -1,11 +1,11 @@
 <script>
-  import { goto } from '$app/navigation';
-  import { afterUpdate } from 'svelte';
-  import Wip from '$lib/wip.svelte';
+    import { goto } from '$app/navigation';
+    import { afterUpdate } from 'svelte';
+    import Wip from '$lib/wip.svelte';
 
-  let username = '';
-  let password = '';
-  let errorMessage = '';
+    let username = '';
+    let password = '';
+    let errorMessage = '';
 
   const handleSubmit = async () => {
     if (username.trim() === '' || password.trim() === '') {
