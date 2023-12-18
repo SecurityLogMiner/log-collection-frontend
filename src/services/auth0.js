@@ -47,6 +47,7 @@ const _useAuth0 = () => {
   };
 
   const login = async (options) => {
+      // the bearer token should be somewhere in options....  i think....
     await get(auth0Client).loginWithRedirect(options);
   };
 
