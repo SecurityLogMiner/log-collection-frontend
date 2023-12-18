@@ -6,6 +6,7 @@
 
   onMount(() => {
     getPublicResource();
+        console.log(message);
   });
 </script>
 

@@ -27,7 +27,7 @@ export const getPublicResource = async () => {
 
 export const getProtectedResource = async () => {
   const config = {
-    url: `${apiServerUrl}/api/messages/protected`,
+    url: `${apiServerUrl}/api/messages/private`,
     method: "GET",
     headers: {
       "content-type": "application/json",
@@ -43,6 +43,23 @@ export const getProtectedResource = async () => {
   if (error) {
     message.set(JSON.stringify(error, null, 2));
   }
+};
+
+export const getPrivateScopedResource = async () => {
+    const config = {
+        url: `${apiServerUrl}/api/messages/private-scoped`,
+        method: "GET",
+        headers: {
+            "content-type": "application/json",
+        },
+    };
+    const {data, error} = await callExternalApi({config});
+    if (data) {
+        message.set(JSON.stringify(data, null, 2));
+    }
+    if (error) {
+        message.set(JSON.stringify(error, null, 2));
+    }
 };
 
 export const getAdminResource = async () => {

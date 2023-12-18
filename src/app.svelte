@@ -26,6 +26,7 @@
   };
 
   const onRedirectCallback = (appState) => {
+    console.log(appState);
     window.history.replaceState(
       {},
       document.title,
