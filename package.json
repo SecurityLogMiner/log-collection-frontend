@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 4040",
     "build": "vite build",
-    "prepare": "svelte-kit sync",
     "preview": "vite preview",
     "api": "json-server --host 0.0.0.0 --port 6060 --watch json-server/db.json --routes json-server/routes.json"
   },
@@ -20,7 +19,7 @@
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.22.6",
-    "axios": "^0.27.2",
+    "axios": "^1.6.2",
     "page": "^1.11.6"
   }
 }
