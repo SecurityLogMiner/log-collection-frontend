@@ -8,16 +8,17 @@
     },
     {
       path: "https://auth0.com/docs/get-started",
-      label: "How It Works",
+      label: "How Auth0 Works",
     },
     {
-      path: "https://auth0.com/blog/developers/",
-      label: "Developer Blog",
+      path: "https://github.com/SecurityLogMiner",
+      label: "GitHub",
     },
     {
-      path: "https://auth0.com/contact-us",
-      label: "Contact an Expert",
+      path: "https://securitylogminer-doc-repo.readthedocs.io/",
+      label: "Documentation",
     },
+
   ];
 </script>
 
@@ -32,12 +33,7 @@
           >
         </p>
         <p class="page-footer-message__description">
-          <PageFooterHyperlink path="https://auth0.com/docs/quickstarts/"
-            ><span>
-              Securely implement authentication using Auth0 on any stack and any
-              device&nbsp;</span
-            ><u>in less than 10 minutes</u></PageFooterHyperlink
-          >
+
         </p>
       </div>
       <div class="page-footer-info__button">
@@ -61,7 +57,9 @@
         {/each}
       </div>
     </div>
-    <div class="page-footer-grid__brand">
+
+    <!-- Commenting just in case we want a logo -->
+    <!-- <div class="page-footer-grid__brand">
       <div class="page-footer-brand">
         <img
           class="page-footer-brand__logo"
@@ -74,6 +72,6 @@
           >Auth0 Inc</PageFooterHyperlink
         >
       </div>
-    </div>
+    </div> -->
   </div>
 </footer>
