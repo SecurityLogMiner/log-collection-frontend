@@ -25,7 +25,7 @@ export const getPublicResource = async () => {
   }
 };
 
-export const getProtectedResource = async () => {
+export const getPrivateResource = async () => {
   const config = {
     url: `${apiServerUrl}/api/messages/private`,
     method: "GET",
@@ -33,7 +33,25 @@ export const getProtectedResource = async () => {
       "content-type": "application/json",
     },
   };
+  const { data, error } = await callExternalApi({ config });
 
+  if (data) {
+    message.set(JSON.stringify(data, null, 2));
+  }
+
+  if (error) {
+    message.set(JSON.stringify(error, null, 2));
+  }
+};
+
+export const getProtectedResource = async () => {
+  const config = {
+    url: `${apiServerUrl}/api/messages/protected`,
+    method: "GET",
+    headers: {
+      "content-type": "application/json",
+    },
+  };
   const { data, error } = await callExternalApi({ config });
 
   if (data) {
