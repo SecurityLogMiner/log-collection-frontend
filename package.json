@@ -6,12 +6,11 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 4040",
     "build": "vite build",
-    "prepare": "svelte-kit sync",
     "preview": "vite preview",
     "api": "json-server --host 0.0.0.0 --port 6060 --watch json-server/db.json --routes json-server/routes.json"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "@sveltejs/vite-plugin-svelte": "^1.4.0",
     "json-server": "^0.17.4",
     "prettier": "^2.8.8",
     "prettier-plugin-svelte": "^2.10.1",
