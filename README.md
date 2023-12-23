@@ -1,4 +1,6 @@
 
+# Log Collection Front End
+
 
 
 Need your own .env. Find it in the auth0 dashboard.
