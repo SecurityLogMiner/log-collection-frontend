@@ -2,9 +2,11 @@
   import HeroBanner from "../components/hero-banner.svelte";
   import Auth0Features from "../components/auth0-features.svelte";
   import PageLayout from "../components/page-layout.svelte";
+  import WIP from "../components/wip.svelte";
 </script>
 
 <PageLayout>
   <HeroBanner />
   <Auth0Features />
+  <WIP/>
 </PageLayout>
