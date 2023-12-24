@@ -1,17 +1,27 @@
 
 # Log Collection Front End
 
+You will need to have an .env file at the root directory and one for the API directory
 
-
-Need your own .env. Find it in the auth0 dashboard.
+### Front-end .env file
 
 ```
+# Place at root directory
 VITE_AUTH0_DOMAIN=AUTH0-DOMAIN
 VITE_AUTH0_CLIENT_ID=AUTH0-CLIENT-ID
 VITE_AUTH0_CALLBACK_URL=http://localhost:4040/callback
 VITE_API_SERVER_URL=http://localhost:6060
 VITE_AUTH0_AUDIENCE=AUTH0-AUDIENCE
 ```
+###
+```
+# Place at API Directory
+PORT=6060
+CLIENT_ORIGIN_URL=http://localhost:4040
+AUTH0_AUDIENCE=https://logminerapi.example.com
+AUTH0_DOMAIN=endeadmin.us.auth0.com
+```
+
 
 You can preview the production build with `npm run preview`.
 
