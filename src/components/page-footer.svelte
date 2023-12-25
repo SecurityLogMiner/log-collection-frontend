@@ -8,6 +8,18 @@
     },
     {
       path: "https://auth0.com/docs/get-started",
+<<<<<<< HEAD
+      label: "How It Works",
+    },
+    {
+      path: "https://auth0.com/blog/developers/",
+      label: "Developer Blog",
+    },
+    {
+      path: "https://auth0.com/contact-us",
+      label: "Contact an Expert",
+    },
+=======
       label: "How Auth0 Works",
     },
     {
@@ -19,6 +31,7 @@
       label: "Documentation",
     },
 
+>>>>>>> 904d288ed7c5fd27ee2b2abf22f22a6972a58d26
   ];
 </script>
 
@@ -33,7 +46,16 @@
           >
         </p>
         <p class="page-footer-message__description">
+<<<<<<< HEAD
+          <PageFooterHyperlink path="https://auth0.com/docs/quickstarts/"
+            ><span>
+              Securely implement authentication using Auth0 on any stack and any
+              device&nbsp;</span
+            ><u>in less than 10 minutes</u></PageFooterHyperlink
+          >
+=======
 
+>>>>>>> 904d288ed7c5fd27ee2b2abf22f22a6972a58d26
         </p>
       </div>
       <div class="page-footer-info__button">
@@ -57,9 +79,13 @@
         {/each}
       </div>
     </div>
+<<<<<<< HEAD
+    <div class="page-footer-grid__brand">
+=======
 
     <!-- Commenting just in case we want a logo -->
     <!-- <div class="page-footer-grid__brand">
+>>>>>>> 904d288ed7c5fd27ee2b2abf22f22a6972a58d26
       <div class="page-footer-brand">
         <img
           class="page-footer-brand__logo"
@@ -72,6 +98,10 @@
           >Auth0 Inc</PageFooterHyperlink
         >
       </div>
+<<<<<<< HEAD
+    </div>
+=======
     </div> -->
+>>>>>>> 904d288ed7c5fd27ee2b2abf22f22a6972a58d26
   </div>
 </footer>

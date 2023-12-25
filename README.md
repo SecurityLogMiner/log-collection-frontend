@@ -1,10 +1,24 @@
+<<<<<<< HEAD
+=======
 
 # Log Collection Front End
 
+>>>>>>> 904d288ed7c5fd27ee2b2abf22f22a6972a58d26
 
 
 Need your own .env. Find it in the auth0 dashboard.
 
+<<<<<<< HEAD
+Need your own .env. Find it in the auth0 dashboard.
+
+```
+VITE_AUTH0_DOMAIN=AUTH0-DOMAIN
+VITE_AUTH0_CLIENT_ID=AUTH0-CLIENT-ID
+VITE_AUTH0_CALLBACK_URL=http://localhost:4040/callback
+VITE_API_SERVER_URL=http://localhost:6060
+VITE_AUTH0_AUDIENCE=AUTH0-AUDIENCE
+```
+=======
 ```
 VITE_AUTH0_DOMAIN=AUTH0-DOMAIN
 VITE_AUTH0_CLIENT_ID=AUTH0-CLIENT-ID
@@ -50,3 +64,4 @@ Discord, if you know, you know
 
 
 
+>>>>>>> 904d288ed7c5fd27ee2b2abf22f22a6972a58d26
