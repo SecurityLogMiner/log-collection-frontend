@@ -39,7 +39,11 @@ h5,
 h6 {
   font-family: var(--font-secondary);
   font-weight: 600;
+<<<<<<< HEAD
   color: rgba(0, 0, 0, 0.86);
+=======
+  /* color: rgba(0, 0, 0, 0.86); */
+>>>>>>> 904d288ed7c5fd27ee2b2abf22f22a6972a58d26
 }
 
 h1,

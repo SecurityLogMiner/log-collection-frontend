@@ -1,0 +1,139 @@
+
+.dashboard-contents {
+  /* responsive */
+
+  padding: 3.2rem 6.4rem;
+}
+
+  .dashboard-contents__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: white;
+
+    margin-top: 0;
+    margin-bottom: 4.8rem;
+
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+}
+
+.dashboard-contents__grid {
+  display: grid;
+  
+  /* responsive */
+
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.4rem;
+  row-gap: 6.4rem;
+}
+
+.dashboard-content:hover {
+  transform: scale(1.03);
+}
+
+.dashboard-content{
+  display: flex;
+  background-color: #f8f4f4;
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+
+  /* responsive */
+
+  padding: 4.8rem;
+
+  border-radius: 1.6rem;
+  /* flex-grow: 1; */
+  padding: 20px;
+}
+
+
+  .widgets-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-content__headline{
+  display: flex;
+  align-items: center;
+
+  margin-top: 0;
+
+  color: var(--black);
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+
+  /* responsive */
+
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.dashboard-content:hover .dashboard-content__headline {
+  text-decoration: underline solid 2px var(--black);
+  text-underline-offset: 2px;
+
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.dashbaord-content__description {
+  margin: 0;
+
+  color: rgb(36, 36, 36);
+  font-weight: 500;
+
+  opacity: 0.7;
+
+  /* responsive */
+
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+/* cuboid */
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  
+  
+  padding: 20px;
+  flex-basis: calc(50% - 20px); 
+  box-sizing: border-box; 
+  border-radius: 15px; 
+  overflow: hidden; 
+}
+
+
+.flexbox-stretched {
+  flex-basis: 100%;
+  box-sizing: border-box;
+}
+
+.flexbox-text {
+  display: flex;
+  align-items: center;
+
+  margin-top: 0;
+
+  color: var(--black);
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+
+  /* responsive */
+
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+
+:global(body) {
+  background-color: #d3d3d3; 
+}
+
+

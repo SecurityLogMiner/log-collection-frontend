@@ -243,8 +243,13 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
+<<<<<<< HEAD
 #.env # no secrets held in file
 #.env.test
+=======
+.env
+.env.test
+>>>>>>> 904d288ed7c5fd27ee2b2abf22f22a6972a58d26
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
