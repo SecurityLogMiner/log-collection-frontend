@@ -1,4 +1,3 @@
-
 # Log Collection Front End
 
 You will need to have an .env file at the root directory and one for the API directory
