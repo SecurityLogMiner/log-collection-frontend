@@ -11,6 +11,7 @@ import ProfilePage from "./pages/profile-page.svelte";
 import PrivatePage from "./pages/private-page.svelte";
 import ProtectedPage from "./pages/protected-page.svelte";
 import PublicPage from "./pages/public-page.svelte";
+import DashboardPage from "./pages/dashboard-page.svelte";
 import { useAuth0 } from "./services/auth0";
 
 let page;
@@ -55,6 +56,7 @@ onMount(async () => {
 			middleware={[authenticationGuard]}
 		/>
 		<Route path="/public" component={PublicPage} />
+    <Route path="/dashboard" component={DashboardPage} />
 		<Route
 			path="/protected"
 			component={ProtectedPage}
