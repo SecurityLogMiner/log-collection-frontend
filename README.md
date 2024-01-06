@@ -12,17 +12,10 @@ VITE_AUTH0_CALLBACK_URL=http://localhost:4040/callback
 VITE_API_SERVER_URL=http://localhost:6060
 VITE_AUTH0_AUDIENCE=AUTH0-AUDIENCE
 ```
-###
-```
-# Place at API Directory
-PORT=6060
-CLIENT_ORIGIN_URL=http://localhost:4040
-AUTH0_AUDIENCE=https://logminerapi.example.com
-AUTH0_DOMAIN=endeadmin.us.auth0.com
-```
 
 
-You can preview the production build with `npm run preview`.
+
+You can preview the production build with `npm run dev`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
