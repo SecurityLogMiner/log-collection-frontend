@@ -1,5 +1,6 @@
 <script>
   import PageLayout from "../components/page-layout.svelte";
+  
 </script>
 
 <PageLayout>

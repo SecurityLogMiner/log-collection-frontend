@@ -3,6 +3,8 @@
   import CodeSnippet from "../components/code-snippet.svelte";
   import PageLayout from "../components/page-layout.svelte";
   import { getAdminResource, message } from "../services/message.service";
+  import Wip from "../components/wip.svelte";
+
 
   onMount(() => {
     getAdminResource();
@@ -28,4 +30,5 @@
       <CodeSnippet title="Admin Message" code={$message} />
     </div>
   </div>
+  <Wip/>
 </PageLayout>

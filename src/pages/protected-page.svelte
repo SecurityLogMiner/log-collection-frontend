@@ -3,6 +3,8 @@
   import CodeSnippet from "../components/code-snippet.svelte";
   import PageLayout from "../components/page-layout.svelte";
   import { getProtectedResource, message } from "../services/message.service";
+  import Wip from "../components/wip.svelte";
+
 
   onMount(() => {
     getProtectedResource();
@@ -25,4 +27,5 @@
       <CodeSnippet title="Protected Message" code={$message} />
     </div>
   </div>
+  <Wip/>
 </PageLayout>
