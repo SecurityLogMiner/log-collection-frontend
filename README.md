@@ -6,11 +6,11 @@ You will need to have an .env file at the root directory and one for the API dir
 
 ```
 # Place at root directory
-VITE_AUTH0_DOMAIN=AUTH0-DOMAIN
-VITE_AUTH0_CLIENT_ID=AUTH0-CLIENT-ID
+VITE_AUTH0_DOMAIN=log-collection.us.auth0.com
+VITE_AUTH0_CLIENT_ID=k0d6e4qgco9qeKMmC2UC4BuanIX0kMyv
 VITE_AUTH0_CALLBACK_URL=http://localhost:4040/callback
 VITE_API_SERVER_URL=http://localhost:6060
-VITE_AUTH0_AUDIENCE=AUTH0-AUDIENCE
+VITE_AUTH0_AUDIENCE=https://log-collection-api.example.com
 ```
 
 

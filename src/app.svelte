@@ -56,7 +56,11 @@ onMount(async () => {
 			middleware={[authenticationGuard]}
 		/>
 		<Route path="/public" component={PublicPage} />
-    <Route path="/dashboard" component={DashboardPage} />
+    	<Route 
+			path="/dashboard" 
+			component={DashboardPage}
+			middleware={[authenticationGuard]}
+			/>
 		<Route
 			path="/protected"
 			component={ProtectedPage}
