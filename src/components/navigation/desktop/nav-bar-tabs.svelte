@@ -8,10 +8,10 @@
 <div class="nav-bar__tabs">
   <NavBarTab path="/profile" label="Profile" />
   <NavBarTab path="/public" label="Public" />
-  <NavBarTab path="/dashboard" label="Dashboard" />
 
   {#if $isAuthenticated}
     <NavBarTab path="/protected" label="Protected" />
     <NavBarTab path="/admin" label="Admin" />
+    <NavBarTab path="/dashboard" label="Dashboard" />
   {/if}
 </div>
