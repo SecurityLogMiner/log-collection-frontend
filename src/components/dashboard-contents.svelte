@@ -1,5 +1,19 @@
 <script>
+    import { onMount } from 'svelte';
     import DashboardContent from "./dashboard-content.svelte";
+
+    let metricsData = [];
+
+    onMount(async () => {
+    try {
+      metricsData = await fetchDynamoDBMetrics();
+      isLoading = false;
+    } catch (error) {
+      console.error('Failed to load DynamoDB metrics:', error);
+      // Handle error state appropriately
+      isLoading = false;
+    }
+});
   </script>
   
   <div class="dashboard-contents">
@@ -25,6 +39,14 @@
         description="Server information here"
         resourceUrl=""
       />
+      <!-- Dynamically added content based on metrics data -->
+      {#each metricsData as metric}
+        <DashboardContent
+          title={metric.name}
+          description={`Value: ${metric.value}`}
+          resourceUrl=""  
+        />
+      {/each}
     </div>
   </div>
   
