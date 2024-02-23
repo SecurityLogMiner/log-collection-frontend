@@ -1,5 +1,4 @@
 <script>
-<<<<<<< HEAD
 import { onMount } from "svelte";
 import PageLoader from "./components/page-loader.svelte";
 import Route from "./components/pager/route.svelte";
@@ -74,7 +73,7 @@ onMount(async () => {
 		<Route path="/callback" component={CallbackPage} />
 		<Route path="*" component={NotFoundPage} />
 	</Router>
-=======
+
   import { onMount } from "svelte";
   import PageLoader from "./components/page-loader.svelte";
   import Route from "./components/pager/route.svelte";
@@ -144,5 +143,5 @@ onMount(async () => {
     <Route path="/callback" component={CallbackPage} />
     <Route path="*" component={NotFoundPage} />
   </Router>
->>>>>>> 904d288ed7c5fd27ee2b2abf22f22a6972a58d26
+
 {/if}
