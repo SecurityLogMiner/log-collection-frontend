@@ -34,13 +34,6 @@
         </p>
         <p class="page-footer-message__description">
 
-          <PageFooterHyperlink path="https://auth0.com/docs/quickstarts/"
-            ><span>
-              Securely implement authentication using Auth0 on any stack and any
-              device&nbsp;</span
-            ><u>in less than 10 minutes</u></PageFooterHyperlink
-          >
-
         </p>
       </div>
       <div class="page-footer-info__button">
@@ -65,8 +58,6 @@
       </div>
     </div>
 
-    <div class="page-footer-grid__brand">
-
     <!-- Commenting just in case we want a logo -->
     <!-- <div class="page-footer-grid__brand">
       <div class="page-footer-brand">
@@ -81,8 +72,6 @@
           >Auth0 Inc</PageFooterHyperlink
         >
       </div>
-    </div>
     </div> -->
-
   </div>
 </footer>

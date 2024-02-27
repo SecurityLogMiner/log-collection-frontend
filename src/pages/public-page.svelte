@@ -3,6 +3,7 @@
   import CodeSnippet from "../components/code-snippet.svelte";
   import PageLayout from "../components/page-layout.svelte";
   import { getPublicResource, message } from "../services/message.service";
+  import Wip from "../components/wip.svelte";
 
   onMount(() => {
     getPublicResource();
@@ -26,4 +27,6 @@
       <CodeSnippet title="Public Message" code={$message} />
     </div>
   </div>
+  <Wip/>
+
 </PageLayout>

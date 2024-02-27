@@ -2,6 +2,8 @@
   import { onMount } from "svelte";
   import CodeSnippet from "../components/code-snippet.svelte";
   import PageLayout from "../components/page-layout.svelte";
+  import Wip from "../components/wip.svelte";
+
   import { getPrivateResource, message } from "../services/message.service";
 
   onMount(() => {
@@ -25,4 +27,5 @@
       <CodeSnippet title="Private Message" code={$message} />
     </div>
   </div>
+  <Wip/>
 </PageLayout>

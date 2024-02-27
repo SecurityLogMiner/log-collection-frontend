@@ -1,22 +1,23 @@
-<svelte:head>
-	<link rel="stylesheet" href="https://unpkg.com/mono-icons@1.0.5/iconfont/icons.css" >
-</svelte:head>
 
 <script>
-  // import Sidebar from '$lib/sidebar.svelte';
-  import Wip from "../components/wip.svelte";
+	import DashboardContents from './../components/dashboard-contents.svelte';
   import PageLayout from "../components/page-layout.svelte";
-  import DashboardContents from '../components/dashboard-contents.svelte';
+  import { useAuth0 } from "../services/auth0";
+  import Wip from "../components/wip.svelte";
 
-  // import Time from '$lib/time.svelte';
 
-  </script>
-  
-<PageLayout>
+  const { user, isAuthenticated } = useAuth0;
+</script>
 
-<DashboardContents/>
-  <Wip/>
-</PageLayout>
+
+
+{#if $isAuthenticated && $user}
+  <PageLayout>
+    <DashboardContents/>
+    <Wip/>
+  </PageLayout>
+{/if}
+
 
 
 
