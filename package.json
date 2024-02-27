@@ -19,7 +19,9 @@
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.22.6",
+    "aws-sdk": "^2.1566.0",
     "axios": "^0.27.2",
+    "dotenv": "^16.4.5",
     "page": "^1.11.6"
   }
 }
