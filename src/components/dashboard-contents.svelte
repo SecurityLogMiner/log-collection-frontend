@@ -4,6 +4,7 @@
   import FilterPanel from "./filter-panel.svelte";
   import SearchBar from "./search-bar.svelte";
   import LogList from "./log-list.svelte"; // Assuming you have a LogList component
+  import DynamoDBMetrics from './DynamoDBMetrics.svelte'; // Import DynamoDBMetrics component
 
   let logs = [];
   let searchTerm = '';
@@ -59,6 +60,9 @@
       {/each}
     </select>
   </section>
+
+  <!-- DynamoDB Metrics Component -->
+  <DynamoDBMetrics />
 
   <!-- Log List Component -->
   <LogList {logs} />

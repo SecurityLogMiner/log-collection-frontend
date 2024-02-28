@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+    import { fetchMetrics } from '../services/fetchDynamoDBMetrics.js';
   
     let metrics = {
       readCapacityUnits: 0,
@@ -10,10 +11,12 @@
     };
   
     onMount(async () => {
-      const response = await fetch('/api/metrics/dynamodb');
-      const data = await response.json();
-      metrics = data;
-    });
+      try {
+        metrics = await fetchMetrics();
+      } catch (error) {
+        console.error('Error loading DynamoDB metrics:', error);
+      }
+  });
   </script>
   
   <style>
