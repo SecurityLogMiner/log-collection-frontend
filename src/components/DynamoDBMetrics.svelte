@@ -1,7 +1,10 @@
 <script>
     import { onMount } from 'svelte';
     import { fetchMetrics } from '../services/fetchDynamoDBMetrics.js';
-  
+
+    const tableName = import.meta.env.VITE_TABLE_NAME; // Accessing the variable
+    const awsRegion = import.meta.env.VITE_AWS_REGION;
+
     let metrics = {
       readCapacityUnits: 0,
       writeCapacityUnits: 0,
@@ -12,10 +15,10 @@
   
     onMount(async () => {
       try {
-        metrics = await fetchMetrics();
-      } catch (error) {
-        console.error('Error loading DynamoDB metrics:', error);
-      }
+      metrics = await fetchMetrics();
+    } catch (error) {
+      console.error('Error loading DynamoDB metrics:', error);
+    }
   });
   </script>
   

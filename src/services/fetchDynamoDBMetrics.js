@@ -1,16 +1,18 @@
 const AWS = require('aws-sdk');
 require('dotenv').config();
 
-AWS.config.update({
-  region: process.env.AWS_REGION,
-});
+// Access environment variables directly within the function
+const awsRegion = process.env.AWS_REGION;
+const tableName = process.env.TABLE_NAME;
+
+// Now that awsRegion is defined, you can use it to configure AWS
+AWS.config.update({ region: awsRegion });
 
 const cloudwatch = new AWS.CloudWatch();
 
-async function fetchMetrics() {
-  const tableName = process.env.TABLE_NAME; // Use environment variable directly inside the function
+export async function fetchMetrics() {
   const endTime = new Date();
-  const startTime = new Date(endTime.getTime() - 60 * 60 * 1000); // Last 1 hour
+  const startTime = new Date(endTime.getTime() - 3600000); // Last 1 hour
 
   const params = {
     EndTime: endTime,
@@ -25,11 +27,11 @@ async function fetchMetrics() {
             Dimensions: [
               {
                 Name: 'TableName',
-                Value: tableName
+                Value: tableName // Now correctly references the tableName variable
               }
             ]
           },
-          Period: 300, // 5 minutes in seconds
+          Period: 300,
           Stat: 'Sum',
         }
       },
@@ -42,11 +44,11 @@ async function fetchMetrics() {
             Dimensions: [
               {
                 Name: 'TableName',
-                Value: tableName
+                Value: tableName // Now correctly references the tableName variable
               }
             ]
           },
-          Period: 300, // 5 minutes in seconds
+          Period: 300,
           Stat: 'Sum',
         }
       }
@@ -58,7 +60,23 @@ async function fetchMetrics() {
   try {
     const data = await cloudwatch.getMetricData(params).promise();
     console.log('Metrics fetched successfully:', data);
-    return data.MetricDataResults; // Adjusted to return the actual results
+    // Process the data into the expected format
+    const formattedMetrics = {
+      readCapacityUnits: 0,
+      writeCapacityUnits: 0,
+      readThrottleEvents: 0,
+      writeThrottleEvents: 0,
+    };
+
+    // Process and aggregate metrics
+    data.MetricDataResults.forEach(metric => {
+      if (metric.Id === 'readCapacityUnits' && metric.Values.length > 0) {
+        formattedMetrics.readCapacityUnits = metric.Values.reduce((a, b) => a + b, 0);
+      }
+      // Add similar processing for other metrics
+    });
+
+    return formattedMetrics;
   } catch (error) {
     console.error('Error fetching metrics:', error);
     throw error;
